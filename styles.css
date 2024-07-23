@@ -1,0 +1,246 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'young-serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url(./assets/fonts/outfit/static/Outfit-Medium.ttf);
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+/* Viewport */
+.content {
+    background-color: #ffffff;
+    width: 56%;
+    display: block;
+    margin: 120px auto;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+/* Title and Paragraph */
+.img {
+    text-align: center;
+}
+
+.content img {
+    width: 680px;
+    border-radius: 20px;
+}
+
+.title {
+    font-family: 'young-serif', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    padding: 16px 0;
+    color: hsl(24, 5%, 18%);
+}
+
+.paragraph {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+/* First Section - Preparation */
+.preparation-time {
+    margin: 30px 0;
+    padding: 30px 20px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 16px;
+}
+
+.preparation-time h4 {
+    font-size: 24px;
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.preparation-time ul {
+    padding: 0 44px;
+}
+
+.preparation-time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul li {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 300;
+}
+
+.preparation-time ul li span {
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+
+/* Second Section - Ingredients */
+.ingredients {
+    border-bottom: 10px solid transparent;
+    box-shadow: 0 4px 2px -2px rgba(182, 180, 180, 0.2);
+    margin-bottom: 36px;
+}
+.ingredients h4{
+    font-family: 'young-serif', sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.ingredients ul {
+    padding: 0 22px;
+}
+
+.ingredients ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+.ingredients ul li {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 300;
+}
+
+/* Third Section - Instructions */
+.instructions {
+    border-bottom: 10px solid transparent;
+    box-shadow: 0 4px 2px -2px rgba(182, 180, 180, 0.2);
+    margin-bottom: 16px;
+}
+
+.instructions h4 {
+    font-family: 'young-serif', sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.instructions ol {
+    padding: 0 22px;
+}
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.instructions ol li span {
+    color: hsl(30, 10%, 34%);
+    font-weight: bold;
+}
+
+.instructions ol li {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    padding: 8px 14px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 300;
+}
+
+/* Fourth Section - Nutrition */
+.nutrition h4 {
+    font-family: 'young-serif', sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+.nutrition p {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 300;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    padding: 10px 32px;
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 10px 32px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-calories {
+    font-family: 'outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    font-weight: 300;
+}
+
+.table-g {
+    font-family: 'outfit', sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.attribution {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.attribution a {
+    color: black;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:425px) {
+    .content {
+        padding: 20px 0;
+    }
+    .content img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .content img {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .content img {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content img {
+        width: 180px;
+    }
+}
